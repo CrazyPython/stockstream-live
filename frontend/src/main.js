@@ -5,9 +5,10 @@ import App from "./App"
 import router from "./router"
 import VueWebsocket from "vue-websocket"
 
+
 Vue.config.productionTip = false
 
-Vue.use(VueWebsocket, window.location.protocol + "//" + window.location.host, {
+Vue.use(VueWebsocket, "https://stockstream.abal.moe", {
   path: "/ws/socket.io"
 })
 
